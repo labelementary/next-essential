@@ -1,0 +1,10 @@
+# ignore Files for Prettier Formatting
+
+node_modules
+.next
+dist
+build
+.github
+.husky
+public
+pnpm-lock.yaml

@@ -1,6 +1,7 @@
 {
-    "recommendations": [
-        "biomejs.biome",
-        "redhat.vscode-yaml"
-    ]
+  "recommendations": [
+    "prettier.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "redhat.vscode-yaml"
+  ]
 }
