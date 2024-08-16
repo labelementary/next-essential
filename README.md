@@ -4,6 +4,10 @@ An Essential Template to build an Modern Next.js application with all the essent
 
 ## Getting Started
 
+### Prerequisites
+
+Next Essential comes with two variants of the template - `main` [branch](https://github.com/radiumlabs/next-essential/tree/main) starter configured with biome.js for linting and formatting and `eslint-prettier` [branch](https://github.com/radiumlabs/next-essential/tree/eslint-prettier) starter configured with prettier and eslint for linting and formatting. Choose the one that suits you best.
+
 ### Radium - [Install Radium CLI](https://github.com/radiumlabs/radium) (Recommended)
 
 `radium` is an CLI tool to initialize any project. By using `radium init --with` command, radium will install dependencies, initialize as git repository, and prepare your project for development by cleaning up the project.
@@ -51,7 +55,7 @@ pnpm/yarn/bun/npm run dev
 - ✨ Framework: [Next.js](https://nextjs.org/)
 - 🚀 Styling: [Tailwind CSS](https://tailwindcss.com/)
 - 💻 Language: [TypeScript](https://www.typescriptlang.org/)
-- 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/)
+- 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/), [Prettier](https://prettier.io/), [ESLint](https://eslint.org/)
 - 🎨 Themes: [Next Themes](https://github.com/pacocoursey/next-themes)
 - 💄 Icons: [Radix-Icon](https://www.radix-ui.com/icons)
 - 🎨 UI: [Shadcn UI](https://ui.shadcn.com/)

@@ -11,4 +11,5 @@ export default {
   bracketSameLine: false,
   useTabs: false,
   jsxSingleQuote: false,
+  // plugins: ["prettier-plugin-tailwindcss", "@ianvs/prettier-plugin-sort-imports"],
 };

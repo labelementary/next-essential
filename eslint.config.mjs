@@ -6,6 +6,7 @@ export default tslint.config(
   ...tslint.configs.recommended,
   ...tslint.configs.stylistic,
   {
+    name: "next-essential-eslint",
     ignores: ["node_modules", "build", "dist", ".next"],
   },
 );
