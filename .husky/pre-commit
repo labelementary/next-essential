@@ -1,4 +1,4 @@
-pnpm run type-check
-pnpm run lint
-pnpm run format
-pnpm run build
+bun run type-check
+bun run lint
+bun run format
+bun run build
