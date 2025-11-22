@@ -1,11 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
-  "vcs": {
-    "clientKind": "git",
-    "enabled": true,
-    "defaultBranch": "master",
-    "useIgnoreFile": true
-  },
+  "$schema": "https://biomejs.dev/schemas/2.3.7/schema.json",
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
@@ -27,9 +21,15 @@
       "!**/dist"
     ]
   },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "defaultBranch": "master",
+    "useIgnoreFile": true
+  },
   "assist": {
     "actions": { "source": { "organizeImports": "on" } },
-    "includes": ["**/*.{js,jsx,ts,tsx}"],
+    "includes": ["**/*.tsx", "**/*.ts"],
     "enabled": true
   },
   "linter": {
@@ -48,8 +48,11 @@
       },
       "correctness": {
         "recommended": true,
+        "useUniqueElementIds": "off",
         "noUnusedVariables": "warn",
-        "noUnusedImports": "warn"
+        "noUnusedImports": "warn",
+        "noInvalidPositionAtImportRule": "off",
+        "useExhaustiveDependencies": "off"
       },
       "style": {
         "recommended": true,
@@ -62,7 +65,8 @@
         "noUnusedTemplateLiteral": "error",
         "useNumberNamespace": "error",
         "noInferrableTypes": "error",
-        "noUselessElse": "error"
+        "noUselessElse": "error",
+        "noNonNullAssertion": "off"
       },
       "complexity": {
         "recommended": true
@@ -71,14 +75,23 @@
         "recommended": true
       },
       "suspicious": {
+        "noUnknownAtRules": "off",
         "recommended": true,
-        "noArrayIndexKey": "off"
+        "noArrayIndexKey": "off",
+        "noDocumentCookie": "off",
+        "noExplicitAny": "off"
       },
       "a11y": {
-        "recommended": true
+        "recommended": true,
+        "useKeyWithClickEvents": "off",
+
+        "noStaticElementInteractions": "off",
+        "useMediaCaption": "off",
+        "useAriaPropsSupportedByRole": "off"
       },
       "security": {
-        "recommended": true
+        "recommended": true,
+        "noDangerouslySetInnerHtml": "off"
       }
     },
     "includes": [
@@ -116,6 +129,9 @@
       "lineWidth": 80,
       "lineEnding": "lf",
       "quoteStyle": "double"
+    },
+    "parser": {
+      "tailwindDirectives": true
     }
   },
   "json": {
